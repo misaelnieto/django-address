@@ -55,7 +55,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=165, blank=True)),
-                ('code', models.CharField(max_length=3, blank=True)),
+                ('code', models.CharField(max_length=6, blank=True)),
                 ('country', models.ForeignKey(on_delete=models.CASCADE, related_name='states', to='address.Country')),
             ],
             options={
